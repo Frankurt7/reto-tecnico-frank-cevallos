@@ -25,52 +25,106 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Scaffolding
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In the following detail we can review the scaffolding in detail
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+<summary><b>Expand scaffolding</b></summary>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```scaffolding
+Project/
+├─ node_modules/
+├─ public/
+│ ├─ favicon.ico
+│ ├─ index.html
+│ ├─ logo192.png
+│ ├─ logo512.png
+│ ├─ manifest.json
+├─ src/
+│ ├─ core/
+│ │ ├─ services/
+│ │ │ ├─ plans/
+│ │ │ │ ├─ plans.service.ts
+│ │ │ │ ├─ plans.dto.ts
+│ │ │ │ ├─ plans.mappers.ts
+│ │ │ │ ├─ plans.data.ts
+│ │ │ ├─ user/
+│ │ │ │ ├─ user.service.ts
+│ │ │ │ ├─ user.dto.ts
+│ │ │ │ ├─ user.data.ts
+│ │ │ ├─ index.ts
+│ │ ├─ store/
+│ │ │ ├─ user/
+│ │ │ │ ├─ async-thunks/
+│ │ │ │ │ ├─ fetchUser.ts
+│ │ │ │ │ ├─ index.ts
+│ │ │ │ ├─ constants.ts
+│ │ │ │ ├─ index.ts
+│ │ │ │ ├─ selectors.ts
+│ │ │ │ ├─ reducer.ts
+│ │ │ │ ├─ slice.ts
+│ │ │ │ ├─ type.ts
+│ │ │ ├─ layout/
+│ │ │ │ ├─ constants.ts
+│ │ │ │ ├─ index.ts
+│ │ │ │ ├─ selectors.ts
+│ │ │ │ ├─ reducer.ts
+│ │ │ │ ├─ slice.ts
+│ │ │ │ ├─ type.ts
+│ │ │ ├─ plan/
+│ │ │ │ ├─ constants.ts
+│ │ │ │ ├─ index.ts
+│ │ │ │ ├─ selectors.ts
+│ │ │ │ ├─ reducer.ts
+│ │ │ │ ├─ slice.ts
+│ │ │ │ ├─ type.ts
+│ │ │ ├─ index.ts
+│ │ │ ├─ store.helpers.ts
+│ │ │ ├─ reducers.ts
+│ │ ├─ model/
+│ │ │ ├─ interfaces/
+│ │ │ │ ├─ plans/
+│ │ │ │ │ ├─ index.ts
+│ │ │ │ │ ├─ plans.interface.ts
+│ │ │ │ ├─ quotation/
+│ │ │ │ │ ├─ index.ts
+│ │ │ │ │ ├─ quotation-form.interface.ts
+│ │ │ │ ├─ user/
+│ │ │ │ │ ├─ index.ts
+│ │ │ │ │ ├─ user.interface.ts
+│ │ │ ├─ enums/
+│ │ │ │ ├─ plans.enum.ts
+│ │ │ │ ├─ stepper.enum.ts
+│ │ │ │ ├─ type-document.enum.enum.ts
+│ │ │ ├─ index.ts
+│ │ ├─ constants/
+│ │ │ ├─ currency.constants.ts
+│ │ │ ├─ products.ts
+│ │ │ ├─ document-type.constants.ts
+│ │ │ ├─ error-messages.constants.ts
+│ │ │ ├─ routes.constants.ts
+│ │ │ ├─ size.constants.ts
+│ │ │ ├─ steps.constant.ts
+│ │ ├─ hooks/
+│ │ │ ├─ master-entities/
+│ │ │ │ ├─ index.ts
+│ │ │ │ ├─ use-user.hooks.ts
+│ ├─ screens/
+│ │ │ ├─ plans/
+│ │ │ ├─ quotation/
+│ │ │ ├─ summary/
+│ │ │ ├─ App.tsx
+│ │ │ ├─ AppRouter.tsx
+│ ├─ shared/
+│ ├─ http/
+│ ├─ assets/
+│ ├─ scss/
+│ ├─ index.css
+│ ├─ index.js
+├─ .gitignore
+├─ package.json
+├─ README.md
+```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
