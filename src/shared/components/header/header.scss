@@ -1,0 +1,37 @@
+@import 'scss/variables';
+
+.header {
+  background-color: $dl-color-white;
+  height: 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  color: $dl-color-grey-100;
+  margin-top: 0.5rem;
+
+  @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+    padding: 0 10rem;
+  }
+  @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+    padding: 0rem 3rem;
+  }
+
+  &__logo {
+    z-index: 1;
+  }
+
+  &__text {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__phone-text {
+    font-size: $dl-font-size-md_b;
+    font-weight: $dl-font-weight-semibold;
+    &__icon {
+      padding-right: 0.75rem;
+    }
+    z-index: 1;
+    cursor: pointer;
+  }
+}

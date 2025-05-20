@@ -1,0 +1,46 @@
+@import 'scss/variables';
+
+.input-container {
+  position: relative;
+
+  input {
+    padding-top: 0.4rem;
+    padding-left: 1rem;
+    border: 1px solid $dl-color-grey-60;
+    border-radius: 5px;
+    height: 56px;
+    width: 100%;
+    font-size: $dl-font-size-md;
+    color: $dl-color-grey-100;
+    box-sizing: border-box;
+  }
+
+  input:focus + &__label,
+  input:valid + &__label {
+    font-size: $dl-font-size-sm;
+    color: #afbdcf;
+    top: 0.25rem;
+    left: 0.75rem;
+    background: #ffffff;
+    padding: 0px 5px 0px 5px;
+  }
+
+  &__label {
+    color: $dl-color-grey-60;
+    font-size: $dl-font-size-md;
+    padding: 1.125rem 1rem;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    pointer-events: none;
+  }
+
+  &__error-container {
+    padding-top: 0.5rem;
+    color: red;
+    font-size: $dl-font-size-sm;
+  }
+}

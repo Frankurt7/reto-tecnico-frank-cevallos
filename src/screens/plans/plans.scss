@@ -1,0 +1,68 @@
+@import 'scss/variables';
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #fafbff;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      padding: 5rem 10rem;
+    }
+    @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+      padding: 2rem 2rem 3rem;
+    }
+  }
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: $dl-font-weight-bold;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__subtitle {
+    font-weight: $dl-font-weight-regular;
+    font-size: $dl-font-size-md;
+    line-height: 1.75rem;
+    letter-spacing: 0.1px;
+    margin-top: 0.75rem;
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      text-align: center;
+    }
+  }
+
+  &__back-button {
+    margin-top: 2rem;
+    position: relative;
+    left: 10%;
+    background-color: transparent !important;
+    border: none;
+  }
+
+  &__button-text {
+    margin-left: 0.5rem;
+    font-size: $dl-font-size-md_b;
+    font-weight: $dl-font-weight-bold;
+    color: $dl-color-blue-berry;
+  }
+
+  &__button-icon {
+    font-size: $dl-font-size-md_b;
+    font-weight: $dl-font-weight-bold;
+    color: $dl-color-blue-berry;
+  }
+}

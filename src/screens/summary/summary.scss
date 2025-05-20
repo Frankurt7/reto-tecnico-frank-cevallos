@@ -1,0 +1,113 @@
+@import 'scss/variables';
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fafbff;
+  height: 100vh;
+
+  &__back-button {
+    margin-top: 2rem;
+    position: relative;
+    left: 10%;
+    background-color: transparent !important;
+    border: none;
+  }
+
+  &__button-text {
+    margin-left: 0.5rem;
+    font-size: $dl-font-size-md_b;
+    font-weight: $dl-font-weight-bold;
+    color: $dl-color-blue-berry;
+  }
+
+  &__button-icon {
+    font-size: $dl-font-size-md_b;
+    font-weight: $dl-font-weight-bold;
+    color: $dl-color-blue-berry;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      padding: 1.5rem 10rem;
+    }
+    @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+      padding: 2rem 2rem 3rem;
+    }
+  }
+
+  &__title {
+    color: $dl-color-neutrals-700;
+    font-weight: $dl-font-weight-bold;
+    font-size: 2rem;
+    text-align: center;
+
+    line-height: 3rem;
+    letter-spacing: -0.6px;
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      text-align: left;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__card {
+    display: grid;
+    background-color: $dl-color-white;
+    max-width: 55rem;
+    height: 19rem;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+    padding-bottom: 8px;
+    padding-left: 2rem;
+    margin-top: -1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 1px 1.5rem 0px #aeacf340;
+    color: $dl-color-neutrals-700;
+  }
+
+  &__calculated-to {
+    font-weight: $dl-font-weight-bold_b;
+    font-size: 10px;
+    line-height: 1rem;
+    letter-spacing: 0.8px;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+
+  &__hr {
+    width: 100%;
+    height: 0;
+    border: medium none;
+    border-top: 1px solid #d7dbf5;
+    background-color: $dl-color-blue-berry;
+    margin-top: -0.25rem;
+    margin-bottom: -0.25rem;
+  }
+
+  &__full-name {
+    font-weight: $dl-font-weight-bold;
+    font-size: $dl-font-size-lg_s;
+    line-height: 1.75rem;
+    letter-spacing: -0.2px;
+    vertical-align: middle;
+    padding-left: 0.5rem;
+  }
+
+  &__subtitle {
+    font-weight: $dl-font-weight-bold;
+    font-size: $dl-font-size-md;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+  }
+
+  &__data-text {
+    font-weight: $dl-font-weight-regular;
+    font-size: $dl-font-size-sm;
+    line-height: 1.5rem;
+    letter-spacing: 0.1px;
+  }
+}

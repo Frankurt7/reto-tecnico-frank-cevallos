@@ -1,0 +1,77 @@
+@import 'scss/variables';
+
+.to-customer-selector {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+
+  @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    height: 13.25rem;
+    border-radius: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    border-width: 3px;
+    box-shadow: 0px 1px 2rem 0px #aeacf359;
+    cursor: pointer;
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      width: 15.375rem;
+    }
+
+    &--selected {
+      border: 3px solid #03050f;
+    }
+  }
+
+  &__img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 3rem;
+  }
+
+  &__content-text {
+    display: grid;
+  }
+
+  &__title {
+    font-weight: $dl-font-weight-bold_b;
+    font-size: $dl-font-size-lg_s;
+    line-height: 1.75rem;
+    letter-spacing: -0.2px;
+    color: $dl-color-neutrals-700;
+    margin-top: 0.5rem;
+  }
+
+  &__subtitle {
+    margin-top: 0.75rem;
+    font-weight: $dl-font-weight-regular;
+    font-size: $dl-font-size-sm;
+    line-height: $dl-font-size-lg_s;
+    letter-spacing: 0.2px;
+    color: $dl-color-neutrals-700;
+  }
+
+  &__radio-button {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid $dl-color-neutrals-500;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+
+  &__check-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: $dl-color-green-berry;
+    border-radius: 50%;
+    border: 1px solid $dl-color-green-berry;
+  }
+}

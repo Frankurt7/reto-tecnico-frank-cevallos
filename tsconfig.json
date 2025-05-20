@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    /* Language and module configuration */
+    "target": "ES2020",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "jsx": "react-jsx",
+    "module": "esNext",
+    "outDir": "build",
+    "baseUrl": "src",
+    "typeRoots": [
+      "./src/types",
+      "node_modules/@types",
+      "./node_modules"
+    ],
+    /* Module resolution and path handling */
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    /* Code generation options */
+    "sourceMap": true,
+    "removeComments": true,
+    /* Strict TypeScript mode */
+    "strict": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Linter rules and options */
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "strictNullChecks": false,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": false,
+    /* Other options */
+    "experimentalDecorators": true,
+    "noEmit": true,
+    /* Required additional types */
+    "types": [
+      "react",
+      "jest",
+      "@testing-library/jest-dom"
+    ]
+  },
+  "exclude": [
+    "build",
+    "node_modules"
+  ],
+  "include": [
+    "src",
+    "src/declaration.d.ts",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/setupTests.js"
+  ]
+}

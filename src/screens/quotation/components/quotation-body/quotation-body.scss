@@ -1,0 +1,122 @@
+@import 'scss/variables';
+
+.quotation-body {
+  display: grid;
+  height: 100%;
+
+  @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+    grid-template-columns: 1fr minmax(40rem, 50%);
+  }
+
+  &__picture-img {
+    z-index: 1;
+    @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+      display: none;
+    }
+  }
+
+  &__picture-img-mobile {
+    @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+      z-index: 1;
+      width: 8rem;
+      height: 9rem;
+    }
+  }
+
+  &__title-container {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      margin-bottom: -0.5rem;
+    }
+  }
+
+  &__picture-side {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    background-color: $dl-color-white;
+  }
+
+  &__form-side {
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 2rem;
+    @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  &__description {
+    row-gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__gradient {
+    font-size: $dl-font-size-sm;
+    font-weight: $dl-font-weight-bold;
+    background: linear-gradient(90deg, rgba(0, 244, 226, 1) 0%, rgba(0, 255, 127, 1) 100%);
+    padding: 0.4rem;
+    border-radius: 0.25rem;
+    max-width: 9rem;
+  }
+
+  &__title {
+    max-width: 20rem;
+    font-size: 2rem;
+    font-weight: $dl-font-weight-bold;
+    margin-top: 1rem;
+  }
+
+  &__subtitle {
+    max-width: 20rem;
+    font-size: $dl-font-size-sm;
+    font-weight: $dl-font-weight-semibold;
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      margin: 0 0;
+    }
+  }
+
+  &__blur-left {
+    position: absolute;
+    width: 15rem;
+    height: 100%;
+
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      bottom: 0rem;
+    }
+    @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+      width: 5rem;
+      height: 10rem;
+      bottom: 4rem;
+    }
+  }
+
+  &__hr {
+    width: 100%;
+    height: 0;
+    border: medium none;
+    border-top: 1px solid #d7dbf5;
+    background-color: $dl-color-grey-30;
+  }
+
+  &__blur-right {
+    position: absolute;
+    width: 15rem;
+    height: 100%;
+
+    @media screen and (min-width: $dl-grid-breakpoint-mobile-rem) {
+      top: 0rem;
+      right: 0;
+    }
+    @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+      width: 10rem;
+      height: 10rem;
+      top: -8%;
+      right: 0%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import 'scss/variables';
+
+html,
+body {
+  font-family: $dl-font-family-light;
+  font-size: 1rem;
+  overflow-x: hidden;
+  background-color: $dl-color-white;
+  margin: 0;
+}
+
+.row-container {
+  padding: $dl-spacing-inline-xxs-rem;
+  background-color: $dl-color-white;
+  border-radius: $dl-border-radius-lg;
+}

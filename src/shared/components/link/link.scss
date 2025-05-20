@@ -1,0 +1,10 @@
+@import 'scss/variables';
+
+.link {
+  font-size: $dl-font-size-sm;
+  color: $dl-color-grey-100;
+  font-weight: $dl-font-weight-semibold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

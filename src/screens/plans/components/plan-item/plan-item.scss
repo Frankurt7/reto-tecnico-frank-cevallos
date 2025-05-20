@@ -1,0 +1,111 @@
+@import 'scss/variables';
+
+.plan-item {
+  background-color: #fff;
+  display: grid;
+  width: 18rem;
+  height: 36.25rem;
+  gap: 1.5rem;
+  border-radius: 1.5rem;
+  padding: 4.25rem 2rem 3rem 2rem;
+  box-shadow: 0 1px 2rem 0 #aeacf359;
+
+  &__header {
+    display: flex;
+    padding: 0rem 0.5rem;
+  }
+
+  &__header-texts {
+    display: grid;
+  }
+
+  &__description-list {
+    display: grid;
+    gap: 1rem;
+    margin-left: -0.5rem;
+    margin-top: -3rem;
+  }
+
+  &__description-item {
+    line-height: 1.75rem;
+    letter-spacing: 0.1px;
+    color: $dl-color-neutrals-700;
+    font-size: 17px;
+  }
+
+  &__name {
+    color: $dl-color-neutrals-700;
+    font-weight: $dl-font-weight-bold_b;
+    font-size: $dl-font-size-lg;
+    line-height: 2rem;
+    letter-spacing: -0.2px;
+  }
+
+  &__subtitle {
+    color: $dl-color-neutrals-600;
+    font-size: $dl-font-size-xs;
+    letter-spacing: 0.6px;
+    margin-top: 1.25rem;
+  }
+
+  &__price {
+    color: $dl-color-neutrals-700;
+    font-weight: $dl-font-weight-bold_b;
+    font-size: $dl-font-size-lg_s;
+    line-height: 1.75rem;
+    letter-spacing: -0.2px;
+    padding-bottom: 1.125rem;
+
+    &--before {
+      font-weight: $dl-font-weight-regular;
+      font-size: $dl-font-size-sm;
+      line-height: 1.25rem;
+      letter-spacing: -0.2px;
+      text-decoration: line-through;
+      color: #7981b2;
+    }
+  }
+
+  &__final-price {
+    color: $dl-color-neutrals-700;
+    font-weight: $dl-font-weight-bold_b;
+    font-size: $dl-font-size-lg_s;
+    line-height: 1.75rem;
+    letter-spacing: -0.2px;
+    padding-bottom: 1.125rem;
+    margin-top: -0.5rem;
+  }
+
+  &__img {
+    width: 3.5rem;
+  }
+
+  &__hr {
+    width: 95%;
+    height: 0;
+    border: medium none;
+    border-top: 1px solid #d7dbf5;
+    background-color: $dl-color-blue-berry;
+    margin-top: -2rem;
+  }
+
+  &__footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__select-button {
+    width: 14rem;
+    height: 3rem;
+    background-color: $dl-color-red-berry !important;
+    border: none;
+    letter-spacing: 0.4px;
+    margin-top: 2rem;
+  }
+
+  &__text-button {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: $dl-font-weight-regular;
+  }
+}

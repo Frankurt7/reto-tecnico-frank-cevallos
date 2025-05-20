@@ -1,0 +1,68 @@
+@import 'scss/variables';
+
+.custom-stepper {
+  background-color: $dl-color-neutrals-200;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  &__step {
+    display: flex;
+    flex-direction: row;
+    min-width: 15rem;
+    padding: 1rem;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__number {
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0.25rem;
+
+    text-align: center;
+    align-content: center;
+    background: transparent;
+    color: $dl-color-neutrals-600;
+    font-size: $dl-font-size-sm;
+    font-weight: $dl-font-weight-bold;
+    border: 2px solid $dl-color-neutrals-600;
+
+    &--active {
+      background-color: $dl-color-blue-berry;
+      color: $dl-color-white;
+      border: 2px solid $dl-color-blue-berry;
+    }
+  }
+
+  &__title {
+    align-content: center;
+    font-weight: $dl-font-weight-regular;
+    color: $dl-color-neutrals-600;
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+    min-width: 10rem;
+    text-align: left;
+
+    &--active {
+      font-weight: $dl-font-weight-bold;
+      color: $dl-color-neutrals-700;
+    }
+  }
+
+  &__hr {
+    width: 30%;
+    height: 0;
+    border: medium none;
+    border-top: 1px dashed white !important;
+    background-color: $dl-color-blue-berry;
+    margin-top: 1.15rem;
+
+    &--active {
+      background-color: $dl-color-neutrals-600;
+    }
+  }
+}

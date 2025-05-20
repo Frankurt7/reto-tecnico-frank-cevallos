@@ -1,0 +1,29 @@
+@import 'scss/variables';
+
+.checkbox-container {
+  display: grid;
+
+  &__form {
+    display: flex;
+    align-items: anchor-center;
+  }
+
+  input[type='checkbox'] {
+    accent-color: $dl-color-grey-100;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 8px;
+  }
+
+  &__label {
+    margin-left: 0.5rem;
+    font-size: $dl-font-size-xs;
+    color: $dl-color-grey-100;
+  }
+
+  &__error-container {
+    padding-top: 0.25rem;
+    color: red;
+    font-size: $dl-font-size-sm;
+  }
+}

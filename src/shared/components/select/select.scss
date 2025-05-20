@@ -1,0 +1,24 @@
+@import 'scss/variables';
+
+.select-container {
+  select {
+    width: 9.375rem;
+    height: 3.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 0 1rem;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png') white no-repeat
+      calc(100% - 15px);
+    border: 1px solid $dl-color-grey-60;
+  }
+
+  &__error-container {
+    padding-top: 0.5rem;
+    color: red;
+    font-size: $dl-font-size-sm;
+  }
+}

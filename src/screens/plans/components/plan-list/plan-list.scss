@@ -1,0 +1,17 @@
+@import 'scss/variables';
+
+.plan-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3rem;
+
+  @media screen and (max-width: $dl-grid-breakpoint-mobile-rem) {
+    max-width: 90%;
+    gap: 2rem;
+  }
+
+  &--scroll-x {
+    overflow-x: scroll;
+  }
+}
